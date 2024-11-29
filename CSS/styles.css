@@ -1,0 +1,142 @@
+:root{
+    --font-primary: 'Figtree light',' Figtree-Italic-VariableFont_wght', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --font-primary: 'Figtree-VariableFont_wght', 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    --back-color: #F5D04E;
+    --border-color: #282A36;
+    --font-color: #7D7D7D;
+
+    --size-normal: 1rem;
+    --size-large: calc(var(--size-normal)+0.2);
+    --size-small: calc(var(--size-normal)-0.2);
+    --size-x-large: calc(var(--size-large)+0.2);
+    --size-x-small: calc(var(--size-small)-0.2);
+}
+
+ /* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+/* 2. Remove default margin */
+* {
+  margin: 0;
+  font-family: var(--font-primary);
+}
+
+body {
+  /* 3. Add accessible line-height */
+  line-height: 1.5;
+  /* 4. Improve text rendering */
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 5. Improve media defaults */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* 6. Inherit fonts for form controls */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* 7. Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  hyphens: auto;
+}
+
+/* 8. Improve line wrapping */
+p {
+  text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+  text-wrap: balance;
+}
+
+/*
+  9. Create a root stacking context
+*/
+#root, #__next {
+  isolation: isolate;
+}
+
+
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+body{
+    min-width: 100vh;
+    background-color: var(--back-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+article{
+    background-color: rgb(255, 255, 255);
+    width: 25%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    border:#504f4f solid 0.1rem ;
+    border-radius: 1rem;
+    box-shadow: 0.5rem 0.5rem ;
+    
+}
+
+article{
+        header{
+            
+               img{
+                    border-radius: 1.5rem;
+                    padding: 1rem;
+                    width:100%;
+                    height: auto;    
+                    }
+                    
+        }
+}
+
+section{
+        padding-left: 1rem;
+}
+section p:first-child{
+    background-color: #F5D04E;
+    width: 4.5rem;
+    padding: 0.4rem;
+    font-weight: bolder;
+    font-size: small;
+    border-radius: 0.3rem;
+    text-align: center;
+}
+section p + p{
+    font-size: small;
+}
+h1{
+    font-size: 1.5rem;
+}
+h1:hover{
+    color: #F5D04E;
+    cursor: url(../assets/cursor.cur), pointer;
+}
+
+section p:last-child{
+        color: var(--font-color);
+}
+
+footer{
+    display: flex;
+    align-items: center;
+            img{
+                height: 50%;
+                padding: 0 1rem;
+            }
+}
+div{
+    padding: 1rem;
+}
